@@ -12,4 +12,11 @@ public class ButtonSciprt : MonoBehaviour
     public void Play(){
         SceneManager.LoadSceneAsync(1);
     }
+    public void RestartGame()
+    {
+        // Reload the current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
+
+
